@@ -35,7 +35,6 @@ void d1p2(const std::string& filename)
 	std::ifstream ifs(filename.c_str());
 
 	std::vector<int> left, right;
-	int score = 0;
 
 	if (!readTwoColumInputFromFile(ifs, left, right))
 	{
@@ -43,8 +42,10 @@ void d1p2(const std::string& filename)
 		std::exit(-1);
 	}
 
-	std::for_each(left.begin(), left.end(), [&](int eLeft) {
+	int score = 0;
 
+	for (int eLeft : left)
+	{
 		int times = 0;
 
 		for (int eRight : right)
@@ -54,7 +55,7 @@ void d1p2(const std::string& filename)
 		}
 
 		score += eLeft * times;
-		});
+	}
 
 	std::cout << "D1-P2 Total: " << score << "\n";
 }
