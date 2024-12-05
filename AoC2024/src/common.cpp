@@ -4,6 +4,7 @@
 #include <string>
 #include <algorithm>
 #include <iostream>
+#include <sstream>
 
 bool readTwoColumInputFromFile(std::istream& ifs, std::vector<int>& left, std::vector<int>& right)
 {
@@ -25,6 +26,22 @@ bool readTwoColumInputFromFile(std::istream& ifs, std::vector<int>& left, std::v
     return left.size() == right.size();
 }
 
+bool readLineIntoVector(std::istream& ifs, std::vector<int>& v)
+{
+    std::string line;
+
+    if (!std::getline(ifs, line))
+        return false;
+
+    std::istringstream iss(line);
+    int num;
+
+    while (iss >> num)
+       v.push_back(num);
+
+    return true;
+}
+
 void printVector(const std::string& title, const std::vector<int>& v)
 {
     std::cout << title << ": ";
@@ -33,4 +50,14 @@ void printVector(const std::string& title, const std::vector<int>& v)
         std::cout << e << " | ";
 
     std::cout << "\n";
+}
+
+std::string printVectorToString(const std::vector<int>& v)
+{
+    std::ostringstream oss;
+
+    for (int e : v)
+        oss << e << " ";
+
+    return oss.str();
 }
