@@ -1,5 +1,6 @@
 #include "src/d1/d1.h"
 #include "src/d2/d2.h"
+#include "src/d3/d3.h"
 
 //#define TEST 
 #ifdef TEST
@@ -17,4 +18,8 @@ int main()
 	// Day 2
 	d2p1(DATA "d2.txt");
 	d2p2(DATA "d2.txt");
+
+	// Day 3
+	d3p1(DATA "d3.txt");
+	d3p2(DATA "d3.txt");
 }

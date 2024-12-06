@@ -31,6 +31,12 @@
     <Filter Include="Source Files\src\d2">
       <UniqueIdentifier>{f14750a7-d2fa-46b3-92f1-756e361cdb5e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\src\d3">
+      <UniqueIdentifier>{0098fcda-9746-4781-b21c-19b8efcca9a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\d3">
+      <UniqueIdentifier>{7775d44c-f48b-4fbc-a729-8a386694246d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AoC2024.cpp">
@@ -45,6 +51,9 @@
     <ClCompile Include="src\d2\d2.cpp">
       <Filter>Source Files\src\d2</Filter>
     </ClCompile>
+    <ClCompile Include="src\d3\d3.cpp">
+      <Filter>Source Files\src\d3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common.h">
@@ -55,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="src\d2\d2.h">
       <Filter>Header Files\src\d2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\d3\d3.h">
+      <Filter>Header Files\src\d3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

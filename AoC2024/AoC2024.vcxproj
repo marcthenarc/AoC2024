@@ -131,11 +131,13 @@
     <ClCompile Include="src\common.cpp" />
     <ClCompile Include="src\d1\d1.cpp" />
     <ClCompile Include="src\d2\d2.cpp" />
+    <ClCompile Include="src\d3\d3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common.h" />
     <ClInclude Include="src\d1\d1.h" />
     <ClInclude Include="src\d2\d2.h" />
+    <ClInclude Include="src\d3\d3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
