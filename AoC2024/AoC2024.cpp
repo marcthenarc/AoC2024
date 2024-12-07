@@ -1,6 +1,7 @@
 #include "src/d1/d1.h"
 #include "src/d2/d2.h"
 #include "src/d3/d3.h"
+#include "src/d4/d4.h"
 
 //#define TEST 
 #ifdef TEST
@@ -22,4 +23,12 @@ int main()
 	// Day 3
 	d3p1(DATA "d3.txt");
 	d3p2(DATA "d3.txt");
+
+	 // Day 4
+	d4p1(DATA "d4.txt");
+#ifdef TEST
+	d4p2(DATA "d4-2.txt");
+#else
+	d4p2(DATA "d4.txt");
+#endif
 }
