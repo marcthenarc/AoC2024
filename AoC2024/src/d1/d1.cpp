@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <iostream>
 #include <numeric>
+#include <fstream>
 
 void d1p1(const std::string& filename)
 {

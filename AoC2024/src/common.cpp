@@ -196,3 +196,28 @@ std::string printVectorToString(const std::vector<int>& v)
 
     return oss.str();
 }
+
+vectorInVectorInt_t readNumbersWithSeparators(std::istream& is, const char& separator, bool quit_after_line_break)
+{
+    std::vector<std::vector<int>> vecOfVecs;
+    std::string line;
+
+    while (std::getline(is, line))
+    {
+        if (quit_after_line_break && !line.size())
+            break;
+
+        std::replace(line.begin(), line.end(), separator, ' ');
+
+        std::vector<int> vec;
+        int num;
+        std::istringstream iss(line);
+
+        while (iss >> num)
+            vec.push_back(num);
+
+        vecOfVecs.push_back(vec);
+    }
+
+    return vecOfVecs;
+}

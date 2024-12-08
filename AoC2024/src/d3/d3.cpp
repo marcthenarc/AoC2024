@@ -2,7 +2,6 @@
 #include "../common.h"
 
 #include <fstream>
-#include <vector>
 #include <iostream>
 #include <regex>
 
